@@ -1,0 +1,412 @@
+<html>
+
+<head>
+  <title>Just Programing</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  html{
+    scroll-behavior: smooth;
+}
+
+
+  /*navigation*/
+  #navbar {
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+    /* border: 2px solid blue; */
+background-color: #00000082;
+    display:flex;
+  }
+/* background:url("/home/dastan/Downloads/others/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"); */
+  body::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 250%;
+    width: 100%;
+    z-index:-1;
+    opacity:1;
+
+
+
+  }
+
+  .image {
+
+    margin: 2px 5px;
+  }
+
+  #image img {
+    height: 79px;
+    margin: 3px 6px;
+  }
+
+  #navbar ul {
+
+
+     /* border: 2px solid blue; */
+        width: 100%;
+        margin: 15px 146px;
+        /* justify-content: center; */
+        display: flex
+  }
+
+  #navbar ul li {
+
+    margin: 10px 19px;
+  list-style: none;
+  font-size: 1.5rem;
+  }
+
+  #navbar ul li a {
+        font-family: 'Acme', sans-serif;
+    background-color: blue;
+     /* border: 2px solid blue;  */
+    margin: 9px 8px;
+    padding: 3px 4px;
+    text-decoration: none;
+    color: white;
+    border-radius: 45px;
+  }
+  #navbar ul li a:hover{
+    border-radius: 45px;
+    background-color: white;
+    color:blue;
+  }
+
+  /*home menu*/
+  #home::before {
+    content: "";
+    background: url('/home/dastan/Downloads/others/florian-olivo-4hbJ-eymZ1o-unsplash.jpg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  #home {
+    display: flex;
+
+    margin: 13px 12px;
+    padding: 12px 32px;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    justify-content: center;
+  }
+
+  #home h1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+
+    margin: 23px;
+    color: white;
+
+  }
+
+  #home p {
+    font-family: 'Acme', sans-serif;
+
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+  }
+
+  /*service section*/
+  #services{
+
+  display: inline-flex;
+  height: 452px;
+  justify-content: center;
+  margin: 20px 98px;
+  }
+  .box{
+    margin: 36px 99px;
+    box-shadow: 2px 3px 45px blue;
+    border-radius:50px;
+      padding: 1px;
+      justify-content: center;
+      width: 277px;
+      height:379px;
+      margin-bottom: 94px;
+      color: white;
+
+      background-color: #7088861c;
+transition: all 0.5s ease-in-out;
+
+  }
+  .box:hover{
+    transform: scale(1.3);
+    box-shadow: 2px 3px 45px green;
+  }
+  .box p{
+
+    color: #cec6c7;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.2rem;
+      text-align: center;
+          margin: 13px 21px;
+      height: 190px;
+      padding: 0px 0px
+  }
+  .box img{
+    display: block;
+    margin:auto;
+    margin-top: 18px;
+    height:50px;
+  }
+  /*Client section*/
+  /*#client::before{
+
+        content: " ";
+        background: url('/home/dastan/Downloads/others/ben-kolde-bs2Ba7t69mM-unsplash.jpg')no-repeat center center/cover;
+
+        position: absolute;
+        width: 100%;
+      height: 59%;
+      z-index: -1;
+      opacity: 0.5;
+  }*/
+
+#client{
+
+padding:70px;
+
+  height:409px;
+}
+#client-1{
+margin-left: 42%;
+box-shadow: 2px 3px 45px blue;
+border-radius: 50%;
+width: 250px;
+height: 250px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+/* padding:14px; */
+transition: all 0.5s ease-in-out;
+}
+#client-1:hover{
+  transform:scale(1.2);
+    box-shadow: 2px 3px 45px green;
+}
+  #client img{
+
+    height: 110px;
+      display: block;
+      /* margin: auto;
+      margin-top: 15px; */
+
+  }
+  #client p{
+    font-family: 'Acme', sans-serif;
+    /* display: block; */
+text-align: center;
+font-size: 2.0rem;
+color: white;
+  }
+  /*Form*/
+ /* #contact::before{
+
+    content: "";
+    background: url('/home/dastan/Downloads/others/miles-burke-idhx-MOCDSk-unsplash.jpg')no-repeat center center/cover;
+
+    position: absolute;
+    width: 100%;
+  height: 80%;
+  z-index: -1;
+  opacity: 0.5;
+  } */
+  .cform{
+    /* background-color: red; */
+    /* margin:10px 30px; */
+    background-color: #02000061;
+
+/* margin: 10% 30%; */
+margin-top: 30px!important;
+padding: 5px 20px!important;
+border-radius: 9px;
+box-shadow: 12px 0px 18px 10px rgba(21,140,186,0.65);
+margin: 40px 30px;
+height: auto;
+transition: all 0.5s ease-in-out;
+  }
+  .cform:hover{
+    transform: scale(1.01);
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+  font-family: 'Acme', sans-serif;
+  opacity: 1;
+  text-align: center;/* Firefox */
+}
+
+#contact{
+  /* background: url('/home/dastan/Downloads/others/miles-burke-idhx-MOCDSk-unsplash.jpg')no-repeat center center/cover; */
+background-color: black;
+box-shadow: 0px -5px 9px 0px green;
+
+    padding: 120px 400px;
+  /* margin-top: 169px; */
+
+
+      height: 80%;
+
+  }
+  #contact:hover{
+  box-shadow: 0px -5px 9px 0px blue;
+
+  }
+  #contact-box{
+
+
+
+height:auto;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+  }
+  #contact-box form{
+
+    width:80%;
+
+  }
+  #contact-box input,
+  #contact-box textarea{
+    border: 1px solid whitesmoke;
+        background: transparent;
+margin:12px 0px;
+    width: 100%;
+    margin:4px;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.5rem;
+    color:whitesmoke!important;
+  }
+  input[type=submit]{
+    font-family: 'Acme', sans-serif;
+    border-radius: 9px!important;
+    background:#7781b330!important;
+    width:50%!important;
+    color: black!important;
+    margin-left:143px!important;
+    margin-bottom: 19px!important;
+    margin-top: 56px!important;
+  }
+  /*extra*/
+
+
+  .primary-h { #
+    color: white;
+font-family: 'Acme', sans-serif;
+  font-size: 4.0rem;
+  margin: 33px;
+  text-align: center;
+  }
+  .secondary-h{
+    font-family: 'Acme', sans-serif;
+    font-size: 1.7rem;
+    margin: 11px 40px;
+    padding: 0px 0px;
+    color: white;
+    text-align:center;
+
+  }
+</style>
+
+
+<body>
+  <nav id="navbar">
+    <div id="image">
+      <img src="/home/dastan/Downloads/others/imageedit_2_4751573226.png"></img>
+    </div>
+    <ul>
+      <li><a href="#home">Home </a></li>
+      <li><a href="#service-provide">Services </a> </li>
+      <li><a href="#client">Client</a> </li>
+      <li><a href="#contact">Contact us</a> </li>
+    </ul>
+  </nav>
+
+
+  <section id="home">
+    <h1 >Welcome to the site</h1>
+    <p>Better learning for better results,India's best learning platform for programing language.<br>A super website with 360 approach to complete learning </p>
+
+  </section>
+  <section id="service-provide">
+    <h2 class="primary-h"> Our Services<h2>
+      <div id="services">
+        <div class="box">
+          <img src="/home/dastan/Downloads/others/c-logo-icon-28389.png"></img>
+          <h2 class="secondary-h">c++ here<h2>
+          <p>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions."</p>
+        </div>
+
+        <div class="box">
+          <img src="/home/dastan/Downloads/others/c-programming.png"></img>
+          <h2 class="secondary-h">c language here<h2>
+          <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes.</p>
+        </div>
+
+        <div class=" box">
+          <img src="/home/dastan/Downloads/others/5-2-python-logo-png-image.png"></img>
+          <h2 class="secondary-h">Python here<h2>
+          <p>Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.</p>
+        </div>
+</div>
+  </section>
+  <section id="client">
+    <h2 class="primary-h"> Our client<h2>
+      <div id="client-1">
+<img src="/home/dastan/Downloads/others/cropped-Digital-boys-logo-1-300x300-1-e1593391992945.png"> </img>
+<p>Digitalboys</p>
+</div>
+</section>
+  <section id="contact">
+    <div class="cform">
+      <h2 class="primary-h">Contact us</h2>
+<div id="contact-box">
+    <form >
+    <div class="input">
+    <input type="text" placeholder="Enter yout Name">
+    </div>
+
+    <div class="input">
+    <input type="email" placeholder="Enter yout Email">
+    </div>
+
+    <div class="input">
+    <input type="number" placeholder="Enter your Phone number">
+    </div>
+    <div class="textarea">
+<textarea type="text" placeholder="Enter your message" cols="15" rows="10"></textarea>
+    </div>
+    <div class="button">
+      <input type="submit">
+    </div>
+
+    </form>
+  </div>
+</div>
+  </section>
+</body>
+
+</html>
